@@ -108,7 +108,7 @@ If the line starts with '↱', insert ' -> ' after it."
 (define-key matematica-mode-map (kbd "RET") 'smart-return)
 (define-key matematica-mode-map (kbd "SPC") 'smart-space)
 (define-key matematica-mode-map (kbd "C-j") 'toggle-lambda-definition)
-(define-key matematica-mode-map (kbd "C-k") 'expand-composition)
+(define-key matematica-mode-map (kbd "C-S-j") 'expand-composition)
 (define-key matematica-mode-map (kbd "C-l") 'insert-lambda)
 (define-key matematica-mode-map (kbd "C-S-l") 'insert-composition)
 (define-key matematica-mode-map (kbd "C-c C-c") 'insert-comment)
@@ -116,7 +116,7 @@ If the line starts with '↱', insert ' -> ' after it."
 (define-key matematica-mode-map (kbd "C-c C-l") 'insert-arrow)
 
 
-(add-to-list 'auto-mode-alist '("\\.lam\\'" . matematica-mode))
+(add-to-list 'auto-mode-alist '("\\.mate\\'" . matematica-mode))
 
 
 (defun parse-lambda-definitions ()
